@@ -1,0 +1,24 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: todo
+  name: todo
+  namespace: maximilian-volk
+spec:
+  clusterIP: 10.96.100.10
+  externalTrafficPolicy: Cluster
+  internalTrafficPolicy: Cluster
+  ipFamilies:
+  - IPv4
+  ipFamilyPolicy: SingleStack
+  ports:
+  - name: port
+    nodePort: 32689
+    port: 8080
+    protocol: TCP
+    targetPort: 80
+  selector:
+    app: todo
+  sessionAffinity: None
+  type: NodePort
