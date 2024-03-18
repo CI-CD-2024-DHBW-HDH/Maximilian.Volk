@@ -6,7 +6,7 @@ metadata:
   name: todo
   namespace: maximilian-volk
 spec:
-  clusterIP: 10.96.100.10
+  clusterIP: 10.245.100.10
   externalTrafficPolicy: Cluster
   internalTrafficPolicy: Cluster
   ipFamilies:
@@ -14,7 +14,7 @@ spec:
   ipFamilyPolicy: SingleStack
   ports:
   - name: port
-    nodePort: 32689
+    nodePort: 32042
     port: 8080
     protocol: TCP
     targetPort: 80
