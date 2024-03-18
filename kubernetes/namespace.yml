@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  creationTimestamp: "2024-03-18T09:06:08Z"
+  labels:
+    kubernetes.io/metadata.name: maximilian-volk
+  name: maximilian-volk
+  resourceVersion: "55662"
+  uid: e15dbaf2-f433-44da-b4eb-075e5553f720
+spec:
+  finalizers:
+  - kubernetes
+status:
+  phase: Active
