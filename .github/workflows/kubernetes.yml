@@ -11,7 +11,7 @@ jobs:
           kubeconfig: ${{ secrets.KUBECONFIG }}
       - name: Deploy
         run: |
-          kubectl apply -f kubernetes/namspace.yaml
+          kubectl apply -f kubernetes/namespace.yaml
           kubectl apply -f kubernetes/deployment.yaml
           kubectl apply -f kubernetes/service.yaml
       - name: Set imagePullSecret
